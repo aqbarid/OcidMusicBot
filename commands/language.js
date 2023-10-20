@@ -90,7 +90,7 @@ module.exports = {
         .setColor(client.config.embedColor)
         .setTitle("Select a language")
         .setTimestamp()
-        .setFooter({ text: `MusicMaker ❤️` })
+        .setFooter({ text: `Thank You` })
       interaction?.reply({ embeds: [embed], components: [buttons, buttons2, buttons3] }).then(async Message => {
 
         const filter = i => i.user.id === interaction?.user?.id
@@ -258,7 +258,7 @@ module.exports = {
               .setColor(client.config.embedColor)
               .setTitle("Time ended, please try again.")
               .setTimestamp()
-              .setFooter({ text: `MusicMaker ❤️` })
+              .setFooter({ text: `Thank You` })
 
             await interaction?.editReply({ embeds: [embed], components: [buttons] }).catch(e => { })
           }
